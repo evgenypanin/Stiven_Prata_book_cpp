@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1632665567 source:d:\temper\history\chapter_13\cddisk\cddisk.cpp
+	"cddisk.h"
+	<cstring>
+
+1632665532 d:\temper\history\chapter_13\cddisk\cddisk.h
+	<iostream>
+

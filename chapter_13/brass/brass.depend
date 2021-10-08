@@ -1,0 +1,24 @@
+# depslib dependency file v1.0
+1632292429 source:d:\temper\history\chapter_13\brass\base.cpp
+	<iostream>
+	"brass.h"
+
+1632078121 d:\temper\history\chapter_13\brass\brass.h
+	<string>
+
+1632292399 source:d:\temper\history\chapter_13\brass\usebbrass1.cpp
+	<iostream>
+	"brass.h"
+
+1632293546 source:d:\temper\history\chapter_13\brass\usebrass2.cpp
+	<iostream>
+	"brass.h"
+	<string>
+
+1632293974 source:d:\temper\history\chapter_13\brass2\base.cpp
+	<iostream>
+	"brass.h"
+
+1632293944 d:\temper\history\chapter_13\brass2\brass.h
+	<string>
+

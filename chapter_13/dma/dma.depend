@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1632417111 source:d:\temper\history\chapter_13\dma\usedma.cpp
+	<iostream>
+	"dma.h"
+
+1632326722 d:\temper\history\chapter_13\dma\dma.h
+	<iostream>
+

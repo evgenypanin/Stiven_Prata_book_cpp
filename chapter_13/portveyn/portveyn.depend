@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1632670960 source:d:\temper\history\chapter_13\portveyn\useportveyn.cpp
+	"portveyn.h"
+
+1632670451 d:\temper\history\chapter_13\portveyn\portveyn.h
+	<iostream>
+
+1632670560 source:d:\temper\history\chapter_13\portveyn\portveyn.cpp
+	"portveyn.h"
+	<cstring>
+

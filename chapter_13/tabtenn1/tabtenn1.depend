@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1632075788 source:d:\temper\history\chapter_13\tabtenn1\usett1.cpp
+	<iostream>
+	"tabtenn1.h"
+
+1632074979 d:\temper\history\chapter_13\tabtenn1\tabtenn1.h
+	<string>
+
+1632075829 source:d:\temper\history\chapter_13\tabtenn1\tabtenn1.cpp
+	<iostream>
+	"tabtenn1.h"
+
