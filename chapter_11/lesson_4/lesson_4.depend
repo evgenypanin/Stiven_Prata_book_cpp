@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1631252184 source:d:\temper\history\chapter_11\lesson_4\mytime3.cpp
+	"mytime3.h"
+
+1631252165 d:\temper\history\chapter_11\lesson_4\mytime3.h
+	<iostream>
+

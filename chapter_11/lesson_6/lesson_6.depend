@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1631260022 source:d:\temper\history\chapter_11\lesson_6\stone.cpp
+	"stonewt.h"
+
+1631260327 d:\temper\history\chapter_11\lesson_6\stonewt.h
+	<iostream>
+
+1631260321 source:d:\temper\history\chapter_11\lesson_6\stonewt.cpp
+	"stonewt.h"
+

@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1631050160 source:d:\temper\history\chapter_11\lesson_3\lesson_3\randwalk.cpp
+	<iostream>
+	<cstdlib>
+	<ctime>
+	"vect.h"
+
+1631048664 d:\temper\history\chapter_11\lesson_3\lesson_3\vect.h
+	<iostream>
+
+1631048769 source:d:\temper\history\chapter_11\lesson_3\lesson_3\vect.cpp
+	<cmath>
+	"vect.h"
+

@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1631264822 source:d:\temper\history\chapter_11\lesson_7\usecomplex0.cpp
+	"complex0.h"
+
+1631266383 d:\temper\history\chapter_11\lesson_7\complex0.h
+	<iostream>
+
+1631266223 source:d:\temper\history\chapter_11\lesson_7\complex0.cpp
+	"complex0.h"
+	<iostream>
+
