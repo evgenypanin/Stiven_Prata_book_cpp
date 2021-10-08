@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1631616358 source:d:\temper\history\chapter_12\queue\bank.cpp
+	<iostream>
+	<cstdlib>
+	<ctime>
+	"queue.h"
+
+1631613883 d:\temper\history\chapter_12\queue\queue.h
+
+1631616359 source:d:\temper\history\chapter_12\queue\queue.cpp
+	"queue.h"
+	<cstdlib>
+

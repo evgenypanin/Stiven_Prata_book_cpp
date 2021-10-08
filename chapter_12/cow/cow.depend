@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1631618979 source:d:\temper\history\chapter_12\cow\usecow.cpp
+	"cow.h"
+
+1631618481 d:\temper\history\chapter_12\cow\cow.h
+	<iostream>
+
+1631618939 source:d:\temper\history\chapter_12\cow\cow.cpp
+	"cow.h"
+	<cstring>
+

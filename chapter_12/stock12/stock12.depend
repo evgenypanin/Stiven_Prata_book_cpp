@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1631632287 source:d:\temper\history\chapter_12\stock12\stock12.cpp
+	"stock12.h"
+
+1631631895 d:\temper\history\chapter_12\stock12\stock12.h
+	<cstring>
+	<iostream>
+

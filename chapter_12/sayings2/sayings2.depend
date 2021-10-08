@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1631604693 source:d:\temper\history\chapter_12\sayings2\sayings2.cpp
+	<iostream>
+	<cstdlib>
+	<ctime>
+	"string1.h"
+
+1631389590 d:\temper\history\chapter_12\sayings2\string1.h
+	<iostream>
+

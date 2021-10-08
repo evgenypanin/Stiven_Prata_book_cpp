@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1631383655 source:d:\temper\history\chapter_12\strngbad\vegnews.cpp
+	<iostream>
+	"strngbad.h"
+
+1631382106 d:\temper\history\chapter_12\strngbad\strngbad.h
+	<iostream>
+
+1631383704 source:d:\temper\history\chapter_12\strngbad\strngbad.cpp
+	<cstring>
+	"strngbad.h"
+

@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1631629849 source:d:\temper\history\chapter_12\string\string2.cpp
+	<cstring>
+	"string2.h"
+
+1631629758 d:\temper\history\chapter_12\string\string2.h
+	<iostream>
+	<cctype>
+
+1631627756 source:d:\temper\history\chapter_12\string\pe12.cpp
+	<iostream>
+	"string2.h"
+

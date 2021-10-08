@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1631392196 source:d:\temper\history\chapter_12\string1\sayings1.cpp
+	<iostream>
+	"string1.h"
+
+1631389590 d:\temper\history\chapter_12\string1\string1.h
+	<iostream>
+
