@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1632771902 source:d:\temper\history\chapter_14\studenti\use_stui.cpp
+	<iostream>
+	"studenti.h"
+
+1632769515 d:\temper\history\chapter_14\studenti\studenti.h
+	<iostream>
+	<string>
+	<valarray>
+

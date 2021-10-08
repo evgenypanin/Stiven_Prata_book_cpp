@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1633702872 source:d:\temper\history\chapter_14\lesson_1_wine\wintest.cpp
+	"wine.h"
+
+1633703600 d:\temper\history\chapter_14\lesson_1_wine\wine.h
+	<iostream>
+	<string>
+	<utility>
+	<valarray>
+

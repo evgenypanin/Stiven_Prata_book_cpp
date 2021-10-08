@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1633677721 source:d:\temper\history\chapter_14\workermi\workemi.cpp
+	"workermi.h"
+
+1633678194 d:\temper\history\chapter_14\workermi\workermi.h
+	<string>
+	<iostream>
+

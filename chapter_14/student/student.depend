@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1632768161 source:d:\temper\history\chapter_14\student\use_stuc.cpp
+	<iostream>
+	"studentc.h"
+
+1632766801 d:\temper\history\chapter_14\student\studentc.h
+	<iostream>
+	<string>
+	<valarray>
+
