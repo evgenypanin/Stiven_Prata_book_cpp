@@ -1,31 +1,18 @@
-#include <iostream>
-#include <cctype>
+#include <iostream>>
+#include <cstring>
+using namespace std;
 
 int main()
 {
-    using namespace std;
-    char ch;
-    int count;
-    cout << "Enter the alpha a-z: ";
-    cin >> ch;
-    while(ch != '@')
+    int m,n, summ;
+    cout << "Enter min number: ";
+    cin >> m;
+    cout << "Enter max number: ";
+    cin >> n;
+    for (; m < n + 1; m++)
     {
-        ++count;
-        if (!(isalpha(ch)))
-        {
-            cin.clear();
-            cout << "No correct symbol\n";
-            cout << "Please input alpha\n";
-        }
-        else if (isupper(ch))
-            cout << char(tolower(ch)) << endl;
-        else if (islower(ch))
-            cout << char(toupper(ch)) << endl;
-        cout << "Enter the alpha a-z: ";
-        cin >> ch;
-
-
+        summ += m;
     }
-    cout << count << " alpha symbol\n";
+    cout << summ << " Summa m -- n";
     return 0;
 }

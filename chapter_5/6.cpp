@@ -1,41 +1,46 @@
 #include <iostream>
 using namespace std;
-
-struct Mecenat
-{
-    char name[32];
-    double summa;
-};
+const int Months = 12;
+const int Years = 3;
 
 int main()
 {
-    int n;
-    cout << "Enter the count Mecenat: ";
-    cin >> n;
-    cin.get();
-    Mecenat *listing = new Mecenat[n];
-    for (int i = 0; i < n; i++)
+    const char *m[Months] =
     {
-        cout << "Enter the fullname mecenat: ";
-        cin.getline(listing[i].name, 32);
-        cout << "Enter the count $";
-        cin >> listing[i].summa;
-        cin.get();
+        "January",
+        "February",
+        "Mart",
+        "Aprel",
+        "May",
+        "June",
+        "July",
+        "August",
+        "September",
+        "October",
+        "November",
+        "December"
+    };
+    int count_books[Years][Months];
+    for (int i = 0; i < Years; i++)
+    {
+        for (int j = 0; j < Months; j++)
+        {
+            cout << m[j] << " month: ";
+            cin >> count_books[i][j];
+        }
     }
 
-    for (int j = 0; j < n; j++)
+    int all_summ = 0, summ_year = 0;
+    for (int i = 0; i < Years + 1; i++)
     {
-        if (listing[j].summa >= 10000)
-            cout << "Grand Patrons: " << listing[j].name << ", " << listing[j].summa << "\n";
+        cout << "summa each year:\t" << summ_year << endl;
+        all_summ += summ_year;
+        summ_year = 0;
+        for (int j = 0; j < Months; j++)
+        {
+                summ_year += count_books[i][j];
+        }
     }
-
-    for (int j = 0; j < n; j++)
-    {
-        if (listing[j].summa < 10000)
-            cout << "Patrons: " << listing[j].name << " " << listing[j].summa << "\n";
-    }
+    cout << "All summa of years:\t" << all_summ << endl;
     return 0;
-
-
 }
-

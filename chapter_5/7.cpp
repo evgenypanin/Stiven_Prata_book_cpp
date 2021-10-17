@@ -1,36 +1,35 @@
 #include <iostream>
-#include <cctype>
+
+
+using namespace std;
+const int max_struct = 2;
+
+struct Car
+{
+    char name[32];
+    int year;
+};
 
 int main()
 {
-    using namespace std;
-    cout << "Enter text for analysis, and type q"
-            "to terminate input.\n";
-    char ch;
-    int whitespace = 0;
-    int digits = 0;
-    int chars = 0;
-    int punct = 0;
-    int others = 0;
-    cin.get(ch);
-    while (ch != 'q')
+    int count_cars;
+    cout << "How much cars in catalog: ";
+    cin >> count_cars;
+    cin.get();
+    Car *catalog = new Car[count_cars];
+    for (int i = 0; i < count_cars; i++)
     {
-        if (isalpha(ch))
-            chars++;
-        else if (isspace(ch))
-            whitespace++;
-        else if (isdigit(ch))
-            digits++;
-        else if (ispunct(ch))
-            punct++;
-        else
-            others++;
-        cin.get(ch);
+        cout << "Car #" << i << endl;
+        cout << "Enter the name proizvoditel: ";
+        cin.get(catalog[i].name, 32);
+        cout << "Enter the year car: ";
+        cin >> catalog[i].year;
+        cin.get();
     }
-    cout << chars << " letters, "
-         << whitespace << " whitespaces, "
-         << digits << " digits, "
-         << punct << " puncts, "
-         << others << " others\n";
+    cout << "All collection: \n";
+    for (int i = 0; i < count_cars; i++)
+    {
+        cout << catalog[i].year << " " << catalog[i].name << endl;
+    }
     return 0;
 }

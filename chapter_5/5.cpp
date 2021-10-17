@@ -1,45 +1,24 @@
 #include <iostream>
-const double nalog_1 = 0.00;
-const double nalog_2 = 0.10;
-const double nalog_3 = 0.15;
-const double nalog_4 = 0.20;
+#include <array>
+using namespace std;
 
 int main()
 {
-    using namespace std;
-    double temp;
-    cout << "Enter the count twarps: ";
-
-    while(cin >> temp && temp >= 0)
+    const int months = 12;
+    int a, summ;
+    array<string, months> m = {"jan", "feb", "mart", "apr", "may", "june", "july", "aug", "sep", "oct", "noya", "dec"};
+    array<int, months> n;
+    for (int i = 0; i < months; i++)
     {
-        double dan = 0.0;
-        if (temp <= 5000)
-            cout << dan << " twarps\n";
-        else if (temp > 5000 && temp < 10000)
-        {
-            dan = 5000 * nalog_1 + (10000 - temp) * nalog_2;
-            cout << dan << " twars\n";
-        }
-
-        else if (temp > 10000 && temp < 20000)
-        {
-            dan = 5000 * nalog_1 + 10000 * nalog_2 + (20000 - temp) * nalog_3;
-            cout << dan << " twarps\n";
-        }
-        else if (temp >= 20000 && temp < 35000)
-        {
-            dan = 5000 * nalog_1 + 10000 * nalog_2 + 20000 * nalog_3 + (35000 - temp) * nalog_4;
-            cout << dan << " twarps\n";
-        }
-        else
-        {
-            dan = 5000 * nalog_1 + 10000 * nalog_2 + 20000 * nalog_3 + (temp - 35000) * nalog_4;
-            cout << dan << " twarps\n";
-        }
-        cout << "Enter the count twarps: ";
-
-
+        cout << m[i] << " month: ";
+        cin >> a;
+        n[i] += a;
     }
-    return 0;
 
+    for (int i = 0; i < months; i++)
+    {
+        summ += n[i];
+    }
+    cout << "All summa of year = " << summ << " books" << endl;
+    return 0;
 }

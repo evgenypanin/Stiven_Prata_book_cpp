@@ -1,39 +1,18 @@
 #include <iostream>
-#include <fstream>
-#include <cstdlib>
-const int SIZE = 60;
+using namespace std;
 
 int main()
 {
-    using namespace std;
-    char filename[SIZE];
-    ifstream inFile;
-    cout << "Enter name the data file: ";
-    cin.getline(filename, SIZE);
-    inFile.open(filename);
-    if (!inFile.is_open())
-    {
-        cout << "Could not open the file " << filename << endl;
-        cout << "Program terminating.\n";
-        exit(EXIT_FAILURE);
-    }
-
-    char value;
     int count = 0;
-    inFile >> value;
-    while (inFile.good())
+    char word;
+    cout << "Enter characters; enter done to quit:\n";
+    cin.get(word);
+    while (word != '#')
     {
+        cout << word;
         ++count;
-        inFile >> value;
+        cin.get(word);
     }
-    if (inFile.eof())
-        cout << "End of file reached.\n";
-    else
-        cout << "Input terminated for unknown reason.\n";
-    if (count == 0)
-        cout << "No data processed.\n";
-    else
-        cout << "Items read: " << count << endl;
-    inFile.close();
+    cout << endl << count << " characters read\n";
     return 0;
 }

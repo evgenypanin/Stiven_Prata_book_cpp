@@ -1,29 +1,23 @@
 #include <iostream>
-#include <cctype>
-#include <cstdlib>
-const int ArSize = 10;
+#include <array>
+using namespace std;
+
+const int ArSize = 16;
+
 int main()
 {
-    using namespace std;
-    double arr[ArSize];
-    int count;
-    int i = 0;
-    cout << "Enter the double number: ";
-    while (i < ArSize && cin >> arr[i])
+    array<long double, ArSize> factorials;
+    factorials[1] = factorials[0] = 1LL;
+
+    for (int i = 2; i < ArSize; i++)
     {
-        ++i;
-        cout << "Enter the double number: ";
+        factorials[i] = i * factorials[i-1];
     }
-    double total = 0.0;
-    double average;
-    for (int j = 0; j < ArSize; j++)
-        total += arr[j];
-    average = total / i;
-    cout << "\n" << average << " average is total\n";
-    for (int j = 0; j < ArSize; j++)
+
+    for (int i = 0; i < ArSize; i++)
     {
-        if (arr[j] < average)
-            cout << arr[j] << endl;
+        cout << i << "! = " << factorials[i] << endl;
     }
     return 0;
+
 }

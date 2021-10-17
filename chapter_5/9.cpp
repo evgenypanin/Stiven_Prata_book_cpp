@@ -1,49 +1,19 @@
 #include <iostream>
-#include <fstream>
+#include <string>
 using namespace std;
-
-struct Mecenat
-{
-    char name[32];
-    double summa;
-};
 
 int main()
 {
-    ofstream outFile;
-    outFile.open("mecenat.txt");
-    outFile << fixed;
-    outFile.precision(2);
-    outFile.setf(ios_base::showpoint);
-    int n;
-    cout << "Enter the count Mecenat: ";
-    cin >> n;
-    cin.get();
-    outFile << n << "\n";
-    Mecenat *listing = new Mecenat[n];
-    for (int i = 0; i < n; i++)
+    int count = 0;
+    string word;
+    cout << "Enter characters; enter done to quit:\n";
+    getline(cin, word);
+    while (word != "done")
     {
-        cout << "Enter the fullname mecenat: ";
-        cin.getline(listing[i].name, 32);
-        cout << "Enter the count $";
-        cin >> listing[i].summa;
-        cin.get();
+        cout << word << endl;
+        ++count;
+        getline(cin, word);
     }
-
-    for (int j = 0; j < n; j++)
-    {
-        if (listing[j].summa >= 10000)
-            outFile << listing[j].name << "\n" << listing[j].summa << "\n";
-    }
-
-    for (int j = 0; j < n; j++)
-    {
-        if (listing[j].summa < 10000)
-            outFile << listing[j].name << "\n" << listing[j].summa << "\n";
-    }
-    outFile.close();
+    cout << endl << count << " characters read\n";
     return 0;
-
-
 }
-
