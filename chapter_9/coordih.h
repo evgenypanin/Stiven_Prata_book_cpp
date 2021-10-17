@@ -1,18 +1,19 @@
-#ifndef COORDIN_H_INCLUDED
-#define COORDIN_H_INCLUDED
+#ifndef COORDIH_H_
+#define COORDIH_H_
 
 struct polar
 {
-    double distance;
-    double angle;
+	double distance;
+	double angle;
 };
 
 struct rect
 {
-    double x;
-    double y;
+	double x;
+	double y;
 };
 
 polar rect_to_polar(rect xypos);
 void show_polar(polar dapos);
-#endif // COORDIN_H_INCLUDED
+
+#endif
